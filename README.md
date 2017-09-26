@@ -7,6 +7,15 @@ TypesScript 2.4 has introduced a breaking change called (WeakTypes)[https://gith
 
 	error TS2559: Type '<your controller>' has no properties in common with type 'Controller'.
 
+# How To Fix
+
+For now, fix this by hand with following;
+
+1. going to node_modules/@types/mithril
+2. Replace its index.d.ts with the one from this repo.
+
+Note if you'd probably want to change your `package.json` not to pull the official one. 
+
 # If You Do Not Want to Bother With This
 
 Fortunately, there is a single line that's causing the WeakType for now. Comment out onunloaded? under the interface Controller as below.
