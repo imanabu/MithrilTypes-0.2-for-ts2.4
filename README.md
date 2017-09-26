@@ -3,7 +3,9 @@
 
 # Why
 
-TypesScript 2.4 has introduced a breaking change called (WeakTypes)[https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes]. If you are still maintaining Mithril 0.x code, your index.d.ts will break.
+TypesScript 2.4 has introduced a breaking change called (WeakTypes)[https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes]. If you are still maintaining Mithril 0.x code, your index.d.ts will break your build and you will get this not very helpful error message.
+
+	error TS2559: Type '<your controller>' has no properties in common with type 'Controller'.
 
 # If You Do Not Want to Bother With This
 
